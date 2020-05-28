@@ -1,0 +1,20 @@
+.side_bar
+  .side_bar__header
+    .side_bar__header__top
+      .side_bar__header__top__user-name
+        %h1
+          = current_user.name
+      .side_bar__header__top__user-edit
+        %ul.side_bar__header__top__user-edit__ul
+          %li.side_bar__header__top__user-edit__li
+            = link_to "#", class: "link-icon" do
+              = icon('fas', 'edit')
+          %l1.side_bar__header__top__user-edit__li
+            = link_to edit_user_path(current_user), class: "link-icon" do
+              = icon('fas', 'user-edit')
+  .side_bar__group
+    = link_to "#" do
+      .side_bar__group-list
+        %p.group-name グループ名
+        %p.group-message 最初のメッセージ
+      

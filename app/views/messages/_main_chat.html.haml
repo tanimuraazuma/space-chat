@@ -1,0 +1,18 @@
+.main_chat
+  .main_chat__header
+    .main_chat__header__group-name
+      %h2.main_chat__header__group-name__h2 グループ名
+      %ul.main_chat__header__group-name__ul
+        %li.main_chat__header__group-name__li Menber :
+        %li.main_chat__header__group-name__li メンバー
+    .main_chat__header__group-edit
+      = link_to "Edit", "#", class: "group-edit"
+  .main_chat__content
+    .main_chat__content__message
+      .main_chat__content__message__name
+        %p.name 名前
+        %p.time 投稿時間
+      .main_chat__content__message__text
+        %p.text おはよう！
+  .main_chat__form
+    
